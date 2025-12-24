@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accompagna Consulting | L'Architecture de votre Réussite</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-color: #0A192F;
+            --accent-color: #64FFDA;
+            --text-color: #E6F1FF;
+            --secondary-text: #8892B0;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+        }
+
+        header {
+            padding: 2rem 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid rgba(100, 255, 218, 0.1);
+        }
+
+        .logo {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1.5rem;
+            color: var(--accent-color);
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .hero {
+            height: 80vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 0 10%;
+            background: radial-gradient(circle at center, rgba(100, 255, 218, 0.05) 0%, transparent 70%);
+        }
+
+        h1 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+            max-width: 900px;
+        }
+
+        .highlight { color: var(--accent-color); }
+
+        .cta-button {
+            margin-top: 2rem;
+            padding: 1rem 2.5rem;
+            border: 1px solid var(--accent-color);
+            color: var(--accent-color);
+            text-decoration: none;
+            font-weight: 600;
+            transition: 0.3s;
+            border-radius: 4px;
+        }
+
+        .cta-button:hover {
+            background: rgba(100, 255, 218, 0.1);
+            box-shadow: 0 0 20px rgba(100, 255, 218, 0.2);
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            padding: 5rem 5%;
+        }
+
+        .service-card {
+            background: rgba(255, 255, 255, 0.03);
+            padding: 2rem;
+            border-radius: 12px;
+            border: 1px solid rgba(136, 146, 176, 0.1);
+            transition: 0.3s;
+        }
+
+        .service-card:hover {
+            transform: translateY(-10px);
+            border-color: var(--accent-color);
+        }
+
+        .service-card h3 {
+            color: var(--accent-color);
+            margin-top: 0;
+        }
+
+        footer {
+            text-align: center;
+            padding: 3rem;
+            color: var(--secondary-text);
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">Accompagna</div>
+        <nav>
+            <a href="#" style="color: white; text-decoration: none;">Expertise</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>L'Architecture de votre <span class="highlight">Réussite Entrepreneuriale</span> au Maroc</h1>
+        <p style="color: var(--secondary-text); max-width: 600px;">Formation, Conseil Stratégique, Mise en Relation et Levée de Fonds pour propulser votre vision vers l'avenir.</p>
+        <a href="#contact" class="cta-button">Démarrer l'accompagnement</a>
+    </section>
+
+    <section class="services-grid">
+        <div class="service-card">
+            <h3>Formation</h3>
+            <p>Ingénierie pédagogique de pointe pour forger les leaders de demain.</p>
+        </div>
+        <div class="service-card">
+            <h3>Conseil Stratégique</h3>
+            <p>Navigation experte dans des environnements complexes et incertains.</p>
+        </div>
+        <div class="service-card">
+            <h3>Levée de Fonds</h3>
+            <p>Structuration financière et accès privilégié aux investisseurs.</p>
+        </div>
+    </section>
+
+    <footer>
+        &copy; 2025 Accompagna Consulting - Casablanca, Maroc.
+    </footer>
+
+</body>
+</html>
