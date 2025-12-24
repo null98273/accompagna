@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Accompagna Consulting</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-color: #0A192F;
+            --accent-color: #64FFDA;
+            --card-bg: rgba(255, 255, 255, 0.05);
+            --text-color: #E6F1FF;
+            --input-bg: rgba(136, 146, 176, 0.1);
+        }
+
+        body {
+            margin: 0;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            font-family: 'Inter', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .contact-container {
+            background: var(--card-bg);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(100, 255, 218, 0.2);
+            padding: 3rem;
+            border-radius: 20px;
+            width: 100%;
+            max-width: 600px;
+            box-shadow: 0 20px 50px rgba(0,0,0,0.5);
+        }
+
+        h2 {
+            font-family: 'Montserrat', sans-serif;
+            color: var(--accent-color);
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+            text-align: center;
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-size: 0.9rem;
+            color: #8892B0;
+        }
+
+        input, select, textarea {
+            width: 100%;
+            padding: 12px;
+            background: var(--input-bg);
+            border: 1px solid rgba(136, 146, 176, 0.3);
+            border-radius: 8px;
+            color: white;
+            font-size: 1rem;
+            transition: 0.3s;
+            box-sizing: border-box;
+        }
+
+        input:focus, select:focus, textarea:focus {
+            outline: none;
+            border-color: var(--accent-color);
+            background: rgba(100, 255, 218, 0.05);
+        }
+
+        .submit-btn {
+            width: 100%;
+            padding: 15px;
+            background: transparent;
+            border: 1px solid var(--accent-color);
+            color: var(--accent-color);
+            font-family: 'Montserrat', sans-serif;
+            font-weight: bold;
+            cursor: pointer;
+            border-radius: 8px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: 0.4s;
+        }
+
+        .submit-btn:hover {
+            background: var(--accent-color);
+            color: var(--bg-color);
+            box-shadow: 0 0 25px rgba(100, 255, 218, 0.4);
+        }
+
+        .back-home {
+            display: block;
+            text-align: center;
+            margin-top: 1.5rem;
+            color: #8892B0;
+            text-decoration: none;
+            font-size: 0.8rem;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="contact-container">
+        <h2>Parlons de votre Vision</h2>
+        <form action="#">
+            <div class="form-group">
+                <label>Nom Complet & Fonction</label>
+                <input type="text" placeholder="Ex: Ahmed Alami - CEO" required>
+            </div>
+
+            <div class="form-group">
+                <label>Besoin Stratégique Prioritaire</label>
+                <select required>
+                    <option value="" disabled selected>Choisir un service...</option>
+                    <option value="levee">Levée de Fonds</option>
+                    <option value="conseil">Conseil Stratégique</option>
+                    <option value="formation">Formation d'Excellence</option>
+                    <option value="teambuilding">Team Building</option>
+                    <option value="networking">Mise en Relation</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label>Maturité de votre Entreprise</label>
+                <select required>
+                    <option value="ideation">Idéation / Création</option>
+                    <option value="croissance">Croissance (Scale-up)</option>
+                    <option value="mature">Entreprise Mature / PME</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label>Ticket de financement ou Budget visé (MAD)</label>
+                <input type="text" placeholder="Ex: 2 000 000 MAD">
+            </div>
+
+            <div class="form-group">
+                <label>Décrivez votre ambition</label>
+                <textarea rows="4" placeholder="Quels sont vos objectifs à 12 mois ?"></textarea>
+            </div>
+
+            <button type="submit" class="submit-btn">Envoyer la demande d'expertise</button>
+        </form>
+        <a href="index.html" class="back-home">← Retourner à l'accueil</a>
+    </div>
+
+</body>
+</html>
